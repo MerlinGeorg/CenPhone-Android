@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Team11_MAPD711_Project-Milestone2</string>
+    <string name="homescreen_banner_text">Welcome to CenPhone! Order the latest smartphones online with home delivery or store pickup options.</string>
+    <string name="order_now">Order Now</string>
+    <string-array name="brands">
+        <item>Select</item>
+        <item>iPhone</item>
+        <item>Samsung</item>
+        <item>Google Pixel</item>
+    </string-array>
+
+    <string-array name="phone_colors">
+        <item>Blue</item>
+        <item>Black</item>
+        <item>Silver</item>
+    </string-array>
+
+
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_api_key"></string>
+    <string name="places_api_key"></string>
+    <string name="title_activity_maps_new">MapsActivityNew</string>
+    <string name="door_delivery">Door Delivery\n</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>
