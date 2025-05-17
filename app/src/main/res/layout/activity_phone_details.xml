@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <!-- Phone Image -->
+        <ImageView
+            android:id="@+id/selectedPhoneImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/iphone" />
+
+        <!-- Phone Model Name -->
+        <TextView
+            android:id="@+id/selectedPhoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Phone Price -->
+        <TextView
+            android:id="@+id/selectedPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#555555" />
+
+        <!-- Storage Options -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storage:"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/storageOptionsGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/storageOption64GB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="64 GB" />
+
+            <RadioButton
+                android:id="@+id/storageOption128GB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="128 GB"
+                android:layout_marginStart="16dp" />
+
+            <RadioButton
+                android:id="@+id/storageOption256GB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="256 GB"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- Color Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp">
+
+            <!-- Color Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"
+                />
+
+            <!-- Color Dropdown -->
+            <Spinner
+                android:id="@+id/colorSpinner"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#002C77"
+                android:popupBackground="#FFFFFF"
+                android:entries="@array/phone_colors"
+                />
+
+            <!-- Additional Image Preview -->
+            <ImageView
+                android:id="@+id/previewImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/blue_iphone_15" />
+        </LinearLayout>
+
+        <!-- Checkout Button -->
+        <Button
+            android:id="@+id/checkoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed To Checkout"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>
